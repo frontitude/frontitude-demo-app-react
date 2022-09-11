@@ -1,3 +1,5 @@
+![frontitodo-cover](https://user-images.githubusercontent.com/91062868/189535731-4f22cc2f-5e29-4597-b60d-1d638992ba2d.jpg)
+
 # Frontitodo
 A demo todo app, demonstrating string management with Frontitude's developer tools.
 
