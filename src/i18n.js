@@ -13,6 +13,10 @@ i18n
   // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
+    backend: {
+      // loadPath: '/locales/folder-structure/{{lng}}/strings.json'
+      loadPath: '/locales/file-structure/strings-{{lng}}.json'
+    },
     fallbackLng: 'en',
     debug: true,
 

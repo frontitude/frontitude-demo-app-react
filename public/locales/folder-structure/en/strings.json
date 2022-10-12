@@ -1,0 +1,10 @@
+{
+  "double_click_instruction": "Double-click to edit a todo",
+  "item_filters.active": "Active",
+  "items_left": "3 items left",
+  "add_item_cta": "Add item",
+  "item_filters.all": "All",
+  "item_name_placeholder": "What needs to be done?",
+  "item_filters.completed": "Completed",
+  "clear_completed": "Clear completed"
+}
