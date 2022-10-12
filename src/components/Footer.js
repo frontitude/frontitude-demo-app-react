@@ -2,7 +2,8 @@ import React from "react";
 import { useTranslation } from 'react-i18next';
 import LanguageSelectDropdown from './LanguageSelectDropdown';
 
-export default function Footer() {
+export default function Footer(props) {
+  const { onLanguageChange = () => {}, language } = props
   const { t } = useTranslation('strings');
 
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
       <p>{t("double_click_instruction")}</p>
       
       <div className="language-wrapper">
-        <LanguageSelectDropdown />
+        <LanguageSelectDropdown onLanguageChange={onLanguageChange} language={language} />
       </div>
     </footer>
   );

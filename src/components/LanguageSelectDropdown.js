@@ -46,13 +46,21 @@ const SingleValue = (props) => {
     )
 }
 
-export default function LanguageSelectDropdown() {
+export default function LanguageSelectDropdown(props) {
+    const { onLanguageChange = () => {}, language } = props
+
+    const handleLanguageChange = (selectedOption) => {
+        const { value } = selectedOption
+        onLanguageChange(value)
+    }
+
     return (
         <Select
             options={options}
-            defaultValue={options[0]}
+            defaultValue={options.find(option => option.value === language)}
             isClearable={false}
             isSearchable={false}
+            onChange={handleLanguageChange}
             components={{
                 Option,
                 SingleValue
