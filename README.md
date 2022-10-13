@@ -9,9 +9,24 @@ Frontitodo's stack:
 - [React-i18next](https://www.npmjs.com/package/react-i18next)
 
 
-## Available Scripts
+## Key points
+- String files (see `public/locales`)
+  - Flexibly structure your files, keeping all the files in the same folder or in multiple folders (multiple folders CLI support is coming soon).
+- i18next configuration (see `i18n.js`)
+  - Use `loadPath` option to support your file structure.
+- `pullcopy` script (see `package.json`)
+  - An easy setup that lets you configure the `frontitude pull` command once and use it frequently without having to set the options each time.
+- DIY, continue to read how to install the demo app locally and see the entire process, from design to development, in action.
 
-In the project directory, you can run:
+## See it in action (from design to development)
+1. **Create a Frontitude account.** If you don't already have one, sign up for a fresh new Frontitude account, or ask for an invitation from one of your team members to join your team’s workspace.
+2. **Upload content to your Frontitude account.** Clone the Frontitodo design file ([Figma](https://www.figma.com/community/file/1151453953890560555), [Adobe XD](https://frontitude-public.s3.eu-west-1.amazonaws.com/sample/Frontitodo+Sample+App.xd), Sketch (Soon)) and [upload](https://www.frontitude.com/guides/upload-content-to-frontitude) the designs to Frontitude.
+3. **Set keys.** In order to reference texts from the code, you’ll need to [assign texts with unique keys](https://www.frontitude.com/guides/manage-your-copy-with-unique-keys) in Frontitude.
+4. **Set up the CLI**. Install the [Frontitude CLI](https://www.npmjs.com/package/@frontitude/cli) by running `npm install -g @frontitude/cli` and then `frontitude init`.
+5. **Submit a sample edit.** In the design tool, edit one of the connected texts and [sync](https://www.frontitude.com/guides/edit-copy-and-save-changes-to-frontitude) it with Frontitude.
+6. **Sync edits with the code.** From the terminal, run `frontitude pull` or `npm run pullcopy` to get the latest edits.
+
+## Available Scripts
 
 ### `npm run dev`
 
