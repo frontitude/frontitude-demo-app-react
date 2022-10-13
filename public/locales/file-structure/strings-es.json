@@ -1,0 +1,10 @@
+{
+  "double_click_instruction": "Haga doble clic para editar una tarea pendiente",
+  "item_filters.active": "activo",
+  "items_left": "quedan 3 artículos",
+  "add_item_cta": "Añadir artículo",
+  "item_filters.all": "Todos",
+  "item_name_placeholder": "Lo que hay que hacer?",
+  "item_filters.completed": "Terminado",
+  "clear_completed": "Despejado completo"
+}
