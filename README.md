@@ -9,6 +9,15 @@ Frontitodo's stack:
 - [React-i18next](https://www.npmjs.com/package/react-i18next)
 
 
+## Key points
+- String files (see `public/locales`)
+  - Flexibly structure your files, keeping all the files in the same folder or in multiple folders (multiple folders CLI support is coming soon).
+- i18next configuration (see `i18n.js`)
+  - Use `loadPath` option to support your file structure.
+- `pullcopy` script (see `package.json`)
+  - An easy setup that lets you configure the `frontitude pull` command once and use it frequently without having to set the options each time.
+- DIY, continue to read how to install the demo app locally and see the entire process, from design to development, in action.
+
 ## Available Scripts
 
 In the project directory, you can run:
