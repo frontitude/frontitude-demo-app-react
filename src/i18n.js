@@ -17,7 +17,9 @@ i18n
   .init({
     backend: {
       // loadPath: '/locales/folder-structure/{{lng}}/strings.json'
-      loadPath: '/locales/file-structure/strings-{{lng}}.json'
+      loadPath: (langs) => (
+        `/locales/file-structure/${langs[0] === 'en' ? 'strings.json' : 'strings-{{lng}}.json'}`
+      )
     },
     detection: {
       lookupQuerystring: 'lang'
